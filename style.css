@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    width: 540px;
+    height: 660px;
+    background-color: hsl(27, 66%, 92%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    height: 125px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-content {
+    width: 465px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.balance {
+    height: inherit;
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.balance p {
+    width: fit-content;
+    font-weight: 400;
+}
+
+.balance h1 {
+    line-height: 30px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.bottom {
+    height: 510px;
+    padding: 40px;
+    background-color: white;
+    color: hsl(25, 47%, 15%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.heading h1 {
+    width: 350px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.chart {
+    height: 250px;
+    border-bottom: 2px solid hsl(27, 66%, 92%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    position: relative;
+}
+
+.bar {
+    border-radius: 5px;
+    background-color: hsl(10, 79%, 65%);
+    width: 50px;
+    height: 150px;
+}
+
+.bar:hover {
+    cursor: pointer;
+    background-color: hsla(10, 79%, 65%, 0.7);
+
+}
+
+.bar-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    bottom: -50px;
+}
+
+.bar-wrap p {
+    font-weight: 300;
+}
+
+.bar.a {
+    height: 50px;
+}
+
+.bar.b {
+    height: 100px;
+}
+
+.bar.c {
+    height: 150px;
+    background-color: hsl(186, 34%, 60%);
+}
+
+.bar.c:hover {
+    background-color: hsla(186, 34%, 60%, 0.7);
+}
+
+.bar.d {
+    height: 90px;
+}
+
+.bar.e {
+    height: 65px;
+}
+
+.bar.f {
+    height: 125px;
+}
+
+.bar.g {
+    height: 75px;
+}
+
+.total {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.this-month {
+    width: 180px;
+    height: inherit;
+}
+
+.total p {
+    font-weight: 300;
+    width: fit-content;
+}
+
+.this-month h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.last-month {
+    width: 135px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+@media screen and (max-width:430px) {
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        width: 345px;
+        height: 535px;
+    }
+
+    .top {
+        height: 100px;
+    }
+
+    .top-content {
+        width: 300px;
+        height: 50px;
+    }
+
+    .balance {
+        width: 85px;
+    }
+
+    .balance p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .balance h1 {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .bottom {
+        height: 420px;
+        padding: 30px 20px;
+    }
+
+    .heading h1 {
+        width: fit-content;
+        font-size: 24px;
+    }
+
+    .chart {
+        height: 205px;
+    }
+
+    .bar {
+        width: 35px;
+    }
+
+    .bar-wrap {
+        position: initial;
+    }
+
+    .this-month {
+        width: 115px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .last-month {
+        width: fit-content;
+    }
+
+    .total {
+        align-items: flex-end;
+    }
+
+    .total p {
+        font-size: 15px;
+    }
+
+    .this-month h1 {
+        font-size: 28px;
+    }
+}
